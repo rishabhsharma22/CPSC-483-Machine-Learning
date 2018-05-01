@@ -34,16 +34,16 @@ X = poly.fit_transform(X_train)
 
 x_test = poly.fit_transform(X_test)
 
-clf = LinearRegression()
-clf.fit(X, y_train)
-preds = clf.predict(x_test)
+clf1 = LinearRegression()
+clf1.fit(X, y_train)
+preds = clf1.predict(x_test)
 
 
-print("The coeffecients/weight matrix for the non linear model with degree 2:", clf.coef_)
+print("The coeffecients/weight matrix for the non linear model with degree 2:", clf1.coef_)
 
 print("Mean squared error: %.4f" % np.mean((preds - y_test) ** 2))
 
-print('Variance score: %.2f' % clf.score(x_test, y_test))
+print('Variance score: %.2f' % clf1.score(x_test, y_test))
 
 
 

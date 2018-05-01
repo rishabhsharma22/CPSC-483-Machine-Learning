@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Sat Mar 17 09:48:12 2018
@@ -19,7 +20,7 @@ data = pd.read_csv(file_name)
 
 X = data.iloc[:,0:-1]
 y = data.iloc[:, -1]
-    
+
 
 from sklearn.linear_model import LinearRegression
 from sklearn.cross_validation import train_test_split
